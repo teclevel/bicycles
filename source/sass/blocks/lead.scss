@@ -1,13 +1,30 @@
 .lead {
-  background-color: $dark;
+  min-height: 825px;
+  background-color: $back-lead;
+  background-image: url("../img/background-bike.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.lead__center {
+  max-width: 874px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lead__wrapper {
+  max-width: 350px;
+  margin-top: 338px;
 }
 
 .lead__title {
   font-weight: bold;
   font-size: 46px;
   line-height: 64px;
-
   color: $white;
+  margin-bottom: 25px;
 
   @media (max-width: $tablet-width) {
     font-size: 30px;

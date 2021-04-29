@@ -1,8 +1,24 @@
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 325px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 321px;
+}
+
+.form__fieldset label {
+  display: inline-block;
+}
+
 .form__text {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
-
+  text-align: center;
+  margin-bottom: 20px;
   color: $white;
 
   @media (max-width: $tablet-width) {
@@ -11,10 +27,11 @@
   }
 }
 
-
 .form__input {
   border: 1px solid $border-input;
   border-radius: 4px;
+  padding: 14px 10px 10px 32px;
+  width: 100%;
 
   &::placeholder {
     font-weight: 400;
@@ -35,8 +52,12 @@
 
 .form__button {
   font-family: inherit;
+  font-size: 15px;
   font-weight: 600;
   line-height: 21px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  padding: 16px 11px 13px 10px;
   background-color: $button;
   border: none;
 }
