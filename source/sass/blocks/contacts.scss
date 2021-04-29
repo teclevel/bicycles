@@ -1,0 +1,40 @@
+.contact {
+  font-weight: normal;
+}
+
+.contact__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: $title;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+  }
+}
+
+.contacts__description {
+  font-size: 17px;
+  line-height: 31px;
+  color: $black-address;
+  text-align: center;
+}
+
+.contacts__link-email {
+  font-size: 16px;
+  line-height: 22px;
+  color: $black-05;
+}
+
+.contacts__link-tel {
+  font-size: 16px;
+  line-height: 32px;
+  color: $black-05;
+  // display: flex;
+  // align-items: center;
+}

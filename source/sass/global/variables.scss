@@ -1,19 +1,41 @@
 // Colors
 
-// $red: #fe7865;
-
+$white: #ffffff;
+$dark: #48494d;
+$border: rgba(163, 95, 95, 0.2);
+$black: #000000;
+$black-address: rgba(0, 0, 0, 0.7);
+$black-05: rgba(0, 0, 0, 0.5);
+$text-input: #1c1c1c;
+$border-input: #c9ccd4;
+$button: #0ad9c6;
+$title: #1f1f1f;
+$background: #131314;
 // Font
 
 $font-family--main: "Open Sans", "Arial", sans-serif;
 
-// center
-// $width-center: 1170px;
 
 // Viewport
 
 $tablet-width: 1023px;
 $mobile-width: 767px;
+$desktop: 1024px;
 
+/*
+@media (max-width: $tablet-width) {
+
+}
+
+@media (max-width: $mobile-width) {
+
+}
+
+@media (min-width: $desktop) {
+
+}
+
+ */
 //resolution
 
 $dppx: 2dppx;

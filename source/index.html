@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="header__nav header__nav--no-js">
-        <ul>
+    <header class="header header--no-js">
+      <nav class="header__nav">
+        <ul class="header__list">
           <li><a href="#about">О нас</a></li>
           <li><a href="#views">Виды велосипедов</a></li>
           <li><a href="#video">Видео про велосипеды</a></li>
@@ -23,17 +23,15 @@
       <section class="lead">
         <h1 class="lead__title">Мы продаем велосипеды</h1>
         <p class="lead__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      </section>
-      <section class="form">
         <h2 class="visually-hidden">Форма заполнения данных</h2>
-        <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fieldset">
             <legend class="form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
             <label for="user-name"></label>
-            <input class="form__input form__text" type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя">
+            <input class="form__input" type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя">
             <label for="user-tel"></label>
-            <input class="form__input form__text" type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона">
-            <button class="form__input form__button" type="submit">Отправить</button>
+            <input class="form__input" type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона">
+            <button class="form__input form__button" type="submit">Подобрать велосипед мечты</button>
           </fieldset>
         </form>
       </section>
