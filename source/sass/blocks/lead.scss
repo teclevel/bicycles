@@ -10,26 +10,77 @@
   @media (min-resolution: $dpi), (min-resolution: $dppx) {
     background-image: url("../img/background-bike@2x.jpg");
   }
+
+  @media (max-width: $tablet-width) {
+    background-color: transparent;
+    min-height: 340px;
+    background-image: url("../img/background-bike-tablet.jpg");
+    background-size: 100%;
+    background-position: 0 0;
+
+    @media (min-resolution: $dpi), (min-resolution: $dppx) {
+      background-image: url("../img/background-bike-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/background-bike-mobile.jpg");
+
+    @media (min-resolution: $dpi), (min-resolution: $dppx) {
+      background-image: url("../img/background-bike-mobile@2x.jpg");
+    }
+  }
 }
 
 .lead__center {
+  position: relative;
   max-width: 874px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 114px;
+  }
+}
+
+.lead__logo {
+  position: absolute;
+  top: 310px;
+  left: 0;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    top: 25px;
+    left: 20px;
+  }
 }
 
 .lead__wrapper {
   max-width: 350px;
   margin-top: 338px;
+  margin-bottom: 18px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 420px;
+    margin-top: 114px;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.lead__form {
+  align-self: center;
 }
 
 .lead__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 46px;
   line-height: 64px;
   color: $white;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 
   @media (max-width: $tablet-width) {
     font-size: 30px;
@@ -41,13 +92,11 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
-
   color: $white;
   mix-blend-mode: normal;
   opacity: 0.8;
 
   @media (max-width: $tablet-width) {
-    font-weight: 300;
     font-size: 18px;
   }
 }
