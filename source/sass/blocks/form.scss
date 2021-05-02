@@ -6,11 +6,15 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-top: 321px;
+  margin-top: 281px;
 
   @media (max-width: $tablet-width) {
     max-width: 322px;
     margin-top: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 288px;
   }
 }
 
@@ -24,8 +28,12 @@
 
   @media (max-width: $tablet-width) {
     font-size: 18px;
-    color:$black;
+    color: $black;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -37,6 +45,10 @@
 
   @media (max-width: $tablet-width) {
     padding: 12px 10px 12px 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 26px;
   }
 
   &::placeholder {
@@ -53,7 +65,7 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 21px;
-  padding: 16px 11px 13px 10px;
+  padding: 12px 11px 13px 10px;
   background-color: $button;
   border: none;
 }
