@@ -41,19 +41,14 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    // min-height: 720px;
     justify-content: center;
     flex-direction: column;
-  }
-
-  @media (max-width: $mobile-width) {
-    // row-gap: 114px;
   }
 }
 
 .lead__logo {
   position: absolute;
-  top: 310px;
+  top: 317px;
   left: 0;
 
   @media (max-width: $tablet-width) {
