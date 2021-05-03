@@ -1,11 +1,11 @@
 .views {
   background-color: $background-views;
-  min-height: 1038px;
   padding-top: 125px;
+  padding-bottom: 113px;
 
   @media (max-width: $tablet-width) {
-    min-height: 949px;
     padding-top: 50px;
+    padding-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -20,7 +20,11 @@
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    padding: 0 ;
+    padding: 0 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
   }
 }
 
@@ -52,7 +56,7 @@
 
 .views__item {
   position: relative;
-  min-height: 720px;
+  min-height: 685px;
   z-index: 0;
 
   @media (max-width: $tablet-width) {
