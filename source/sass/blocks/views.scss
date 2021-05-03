@@ -1,8 +1,18 @@
+.views {
+  background-color: $background-views;
+}
+
+.views__center {
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
 .views h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   color: $title;
+  text-align: center;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
