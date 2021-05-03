@@ -4,7 +4,13 @@
   padding-top: 125px;
 
   @media (max-width: $tablet-width) {
+    min-height: 949px;
     padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 400px;
+    padding-bottom: 12px;
   }
 }
 
