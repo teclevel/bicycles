@@ -15,7 +15,7 @@
   }
 }
 
-.contacts__title {
+.contacts h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -34,7 +34,7 @@
   }
 }
 
-.contacts__description {
+.contacts p {
   font-size: 17px;
   line-height: 31px;
   color: $black-address;
@@ -88,7 +88,7 @@
   }
 }
 
-.contacts__link {
+.contacts__wrapper a {
   position: relative;
   text-decoration: none;
   color: $black-05;
@@ -111,7 +111,7 @@
   }
 }
 
-.contacts__link-email {
+.contacts__wrapper a:first-child {
   line-height: 22px;
   margin-left: -20px;
 
@@ -133,7 +133,7 @@
   }
 }
 
-.contacts__link-tel {
+.contacts__wrapper a:last-child {
   line-height: 32px;
   margin-left: -15px;
 
