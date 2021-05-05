@@ -1,4 +1,4 @@
-.form__fieldset {
+.form fieldset {
   flex-direction: column;
   display: flex;
   row-gap: 20px;
@@ -18,7 +18,7 @@
   }
 }
 
-.form__text {
+.form legend {
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -37,11 +37,17 @@
   }
 }
 
-.form__input {
+.form input,
+.form button {
   border: 1px solid $border-input;
   border-radius: 4px;
   padding: 14px 10px 10px 32px;
   width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   @media (max-width: $tablet-width) {
     padding: 12px 10px 12px 20px;
@@ -60,7 +66,20 @@
   }
 }
 
-.form__button {
+.form__fieldset :nth-child(4) {
+  position: relative;
+
+  &:hover::after {
+    position: absolute;
+    font-size: 14px;
+    color: $dark;
+    top: 0;
+    left: 10px;
+    content: attr(data-title);
+  }
+}
+
+.form button {
   font-family: inherit;
   font-size: 15px;
   font-weight: 600;

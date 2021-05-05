@@ -79,6 +79,7 @@
   column-gap: 20px;
   justify-content: space-between;
   border-bottom: 1px solid $border;
+  flex-wrap: wrap;
 }
 
 .header--no-js .header__list,
@@ -114,7 +115,7 @@
       width: 25px;
       height: 25px;
       top: 18px;
-      right: 20px;
+      right: 0;
       background-image: url("../img/icons/arrow.svg");
       background-repeat: no-repeat;
     }
