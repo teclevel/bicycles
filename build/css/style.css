@@ -336,6 +336,7 @@ img {
       margin-top: 20px; } }
 
 .form fieldset {
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -427,15 +428,19 @@ img {
     color: #1c1c1c;
     opacity: 0.5; }
 
-.form__fieldset :nth-child(4) {
-  position: relative; }
-  .form__fieldset :nth-child(4):hover::after {
+.form input[id="tel"] + label {
+  position: absolute;
+  bottom: 69px;
+  width: 100%;
+  height: 44px;
+  cursor: pointer; }
+  .form input[id="tel"] + label:hover::after {
     position: absolute;
+    content: attr(data-title);
     font-size: 14px;
     color: #48494d;
-    top: 0;
     left: 10px;
-    content: attr(data-title); }
+    bottom: 27px; }
 
 .form button {
   font-family: inherit;
