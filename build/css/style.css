@@ -1,17 +1,3 @@
-/*
-@media (max-width: $tablet-width) {
-
-}
-
-@media (max-width: $mobile-width) {
-
-}
-
-@media (min-width: $desktop) {
-
-}
-
- */
 *,
 *::before,
 *::after {
@@ -428,13 +414,13 @@ img {
     color: #1c1c1c;
     opacity: 0.5; }
 
-.form input[id="tel"] + label {
+.form input[type="tel"] + label {
   position: absolute;
   bottom: 69px;
   width: 100%;
   height: 44px;
   cursor: pointer; }
-  .form input[id="tel"] + label:hover::after {
+  .form input[type="tel"] + label:hover::after {
     position: absolute;
     content: attr(data-title);
     font-size: 14px;
@@ -508,8 +494,8 @@ img {
   color: #000000;
   text-align: center;
   max-width: 263px;
-  padding-top: 60px;
   margin-right: 39px;
+  padding-top: 60px;
   position: relative;
   counter-increment: new-counter; }
   @media (max-width: 1023px) {
@@ -517,7 +503,6 @@ img {
       margin-right: 0; } }
   @media (max-width: 767px) {
     .about__list li {
-      font-weight: 400px;
       font-size: 18px;
       padding-top: 57px; } }
   .about__list li:last-child {

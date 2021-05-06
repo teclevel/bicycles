@@ -1,10 +1,11 @@
 'use strict';
-const pageHeader = document.querySelector('.header');
-const headerToggle = document.querySelector('.header__toggle-menu');
+var pageHeader = document.querySelector('.header');
+var headerToggle = document.querySelector('.header__toggle-menu');
+
 
 pageHeader.classList.remove('header--no-js');
 
-headerToggle.addEventListener('click', () => {
+headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('header--open-menu')) {
     pageHeader.classList.remove('header--open-menu');
   } else {
