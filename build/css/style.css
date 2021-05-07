@@ -494,8 +494,8 @@ img {
   color: #000000;
   text-align: center;
   max-width: 263px;
-  margin-right: 39px;
-  padding-top: 60px;
+  margin: 0 39px 0 0;
+  padding: 60px 0 0;
   position: relative;
   counter-increment: new-counter; }
   @media (max-width: 1023px) {
