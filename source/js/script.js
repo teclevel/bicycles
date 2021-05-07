@@ -2,7 +2,7 @@
 var pageHeader = document.querySelector('.header');
 var headerToggle = document.querySelector('.header__toggle-menu');
 
-if (pageHeader.classList.contains('header--no-js')) {
+if (pageHeader) {
   pageHeader.classList.remove('header--no-js');
 }
 
