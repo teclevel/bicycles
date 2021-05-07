@@ -2,8 +2,9 @@
 var pageHeader = document.querySelector('.header');
 var headerToggle = document.querySelector('.header__toggle-menu');
 
-
-pageHeader.classList.remove('header--no-js');
+if (pageHeader.classList.contains('header--no-js')) {
+  pageHeader.classList.remove('header--no-js');
+}
 
 headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('header--open-menu')) {
