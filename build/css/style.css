@@ -128,7 +128,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid rgba(163, 95, 95, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
