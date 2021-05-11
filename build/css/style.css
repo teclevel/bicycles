@@ -529,7 +529,7 @@ img {
 .views {
   background-color: #f6f7f9;
   padding-top: 125px;
-  padding-bottom: 113px; }
+  padding-bottom: 83px; }
   @media (max-width: 1023px) {
     .views {
       padding-top: 50px;
@@ -579,10 +579,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 767px) {
+    .views__list {
+      display: grid; } }
 
 .views__item {
   position: relative;
-  min-height: 685px;
+  min-height: 715px;
   z-index: 0; }
   @media (max-width: 1023px) {
     .views__item {
