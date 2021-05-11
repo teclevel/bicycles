@@ -9,8 +9,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 400px;
+    padding-top: 46px;
     padding-bottom: 12px;
+    min-height: 400px;
   }
 }
 

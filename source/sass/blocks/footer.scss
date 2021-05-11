@@ -1,0 +1,77 @@
+.footer {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 100px;
+  row-gap: 20px;
+  padding: 0 10px 100px;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 104px;
+    padding: 0 10px 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    column-gap: 30px;
+  }
+}
+
+.footer a {
+  position: relative;
+  text-decoration: none;
+  color: $black-05;
+  padding-left: 42px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    color: $button;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.footer a[href="mailto:puteshestviemechta@gmail.ru"] {
+  line-height: 22px;
+  margin-left: -20px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    margin-left: 9px;
+  }
+
+  &::before {
+    width: 26px;
+    height: 20px;
+    top: 1px;
+    left: 0;
+    background-image: url("../img/icons/mail.svg");
+  }
+}
+
+.footer a[href="tel:+749978468446"] {
+  line-height: 32px;
+  margin-left: -15px;
+
+  &::before {
+    width: 22px;
+    height: 25px;
+    top: 3px;
+    left: 5px;
+    background-image: url("../img/icons/phone.svg");
+  }
+}

@@ -25,10 +25,24 @@
 
   @media (max-width: $mobile-width) {
     min-height: 760px;
-    background-image: url("../img/background/background-bike-mobile.jpg");
+    background-image: none;
+    position: relative;
 
-    @media (min-resolution: $dpi), (min-resolution: $dppx) {
-      background-image: url("../img/background/background-bike-mobile@2x.jpg");
+    &::before {
+      position: absolute;
+      content: "";
+      height: 390px;
+      width: auto;
+      background-color: $back-lead;
+      background-image: url("../img/background/background-bike-mobile.jpg");
+      background-size: cover;
+      background-position: center;
+      left: 0;
+      right: 0px;
+
+      @media (min-resolution: $dpi), (min-resolution: $dppx) {
+        background-image: url("../img/background/background-bike-mobile@2x.jpg");
+      }
     }
   }
 }
@@ -79,8 +93,8 @@
 
   @media (max-width: $mobile-width) {
     max-width: 288px;
-    min-height: 116vw;
-    padding-top: 31vw;
+    min-height: 200px;
+    padding-top: 100px;
   }
 }
 
@@ -92,7 +106,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 87px;
+    padding-top: 121px;
   }
 }
 
