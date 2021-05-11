@@ -219,7 +219,7 @@ img {
   @media (max-width: 1023px) {
     .lead {
       background-color: transparent;
-      min-height: 720px;
+      min-height: 726px;
       background-image: url("../img/background/background-bike-tablet.jpg");
       background-size: 100%;
       background-position: 0 0; } }
@@ -261,8 +261,8 @@ img {
   @media (max-width: 1023px) {
     .lead__logo {
       display: block;
-      top: 19px;
-      left: 11px; } }
+      top: 24px;
+      left: 22px; } }
   @media (max-width: 767px) {
     .lead__logo {
       top: 15px;
@@ -277,7 +277,7 @@ img {
       max-width: 420px;
       min-height: 43vw;
       margin: 0;
-      padding-top: 109px;
+      padding-top: 114px;
       text-align: center;
       -ms-flex-item-align: center;
           align-self: center; } }
@@ -291,9 +291,6 @@ img {
   -ms-flex-item-align: center;
       align-self: center; }
   @media (max-width: 1023px) {
-    .lead__form {
-      padding-top: 74px; } }
-  @media (max-width: 767px) {
     .lead__form {
       padding-top: 80px; } }
 
@@ -436,6 +433,9 @@ img {
   padding: 12px 11px 13px 10px;
   background-color: #0ad9c6;
   border: none; }
+  @media (max-width: 1023px) {
+    .form button {
+      padding: 14px 11px 16px 10px; } }
 
 .about {
   max-width: 1170px;

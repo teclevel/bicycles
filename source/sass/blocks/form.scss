@@ -92,4 +92,8 @@
   padding: 12px 11px 13px 10px;
   background-color: $button;
   border: none;
+
+  @media (max-width: $tablet-width) {
+    padding: 14px 11px 16px 10px;
+  }
 }

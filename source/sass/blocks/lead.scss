@@ -13,7 +13,7 @@
 
   @media (max-width: $tablet-width) {
     background-color: transparent;
-    min-height: 720px;
+    min-height: 726px;
     background-image: url("../img/background/background-bike-tablet.jpg");
     background-size: 100%;
     background-position: 0 0;
@@ -53,8 +53,8 @@
 
   @media (max-width: $tablet-width) {
     display: block;
-    top: 19px;
-    left: 11px;
+    top: 24px;
+    left: 22px;
   }
 
   @media (max-width: $mobile-width) {
@@ -72,7 +72,7 @@
     max-width: 420px;
     min-height: 43vw;
     margin: 0;
-    padding-top: 109px;
+    padding-top: 114px;
     text-align: center;
     align-self: center;
   }
@@ -89,10 +89,6 @@
 
 
   @media (max-width: $tablet-width) {
-    padding-top: 74px;
-  }
-
-  @media (max-width: $mobile-width) {
     padding-top: 80px;
   }
 }
