@@ -211,7 +211,7 @@ img {
   background-color: #181917;
   background-image: url("../img/background/background-bike.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .lead {

@@ -4,7 +4,7 @@
   background-color: $back-lead;
   background-image: url("../img/background/background-bike.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 
   @media (min-resolution: $dpi), (min-resolution: $dppx) {
