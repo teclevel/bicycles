@@ -265,8 +265,8 @@ img {
       left: 22px; } }
   @media (max-width: 767px) {
     .lead__logo {
-      top: 15px;
-      left: 10px; } }
+      top: 24px;
+      left: 17px; } }
 
 .lead__wrapper {
   max-width: 350px;
@@ -285,7 +285,7 @@ img {
     .lead__wrapper {
       max-width: 288px;
       min-height: 116vw;
-      padding-top: 28vw; } }
+      padding-top: 31vw; } }
 
 .lead__form {
   -ms-flex-item-align: center;
@@ -293,6 +293,9 @@ img {
   @media (max-width: 1023px) {
     .lead__form {
       padding-top: 80px; } }
+  @media (max-width: 767px) {
+    .lead__form {
+      padding-top: 87px; } }
 
 .lead h1 {
   font-weight: 700;
@@ -448,7 +451,7 @@ img {
       min-height: 452px; } }
   @media (max-width: 767px) {
     .about {
-      padding: 31px 0 81px; } }
+      padding: 41px 0 84px; } }
 
 .about h2 {
   font-weight: 600;
@@ -688,16 +691,16 @@ img {
   position: relative;
   min-height: 706px;
   background-color: #131314;
-  padding-top: 97px;
+  padding: 97px 0 0;
   margin-bottom: 150px; }
   @media (max-width: 1023px) {
     .video {
       min-height: 413px;
-      padding-top: 50px; } }
+      padding: 50px 0 0; } }
   @media (max-width: 767px) {
     .video {
       min-height: 384px;
-      padding-top: 64px;
+      padding: 64px 5px 0;
       margin-bottom: 115px; } }
 
 .video h2 {

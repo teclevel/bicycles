@@ -58,8 +58,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 15px;
-    left: 10px;
+    top: 24px;
+    left: 17px;
   }
 }
 
@@ -80,16 +80,19 @@
   @media (max-width: $mobile-width) {
     max-width: 288px;
     min-height: 116vw;
-    padding-top: 28vw;
+    padding-top: 31vw;
   }
 }
 
 .lead__form {
   align-self: center;
 
-
   @media (max-width: $tablet-width) {
     padding-top: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 87px;
   }
 }
 
