@@ -244,7 +244,7 @@ img {
         background-size: cover;
         background-position: center;
         left: 0;
-        right: 0px; } }
+        right: 0; } }
     @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
       .lead::before {
         background-image: url("../img/background/background-bike-mobile@2x.jpg"); } }
@@ -338,13 +338,13 @@ img {
 
 .form fieldset {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   row-gap: 20px;
   max-width: 325px;
   border: none;
@@ -429,19 +429,12 @@ img {
     color: #1c1c1c;
     opacity: 0.5; }
 
-.form input[type="tel"] + label {
-  position: absolute;
-  bottom: 69px;
-  width: 100%;
-  height: 44px;
-  cursor: pointer; }
-
 .form button {
   font-family: inherit;
   font-size: 15px;
   font-weight: 600;
   line-height: 21px;
-  padding: 12px 11px 13px 10px;
+  padding: 17px 10px 13px 15px;
   background-color: #0ad9c6;
   border: none; }
   @media (max-width: 1023px) {
@@ -541,10 +534,9 @@ img {
   @media (max-width: 1023px) {
     .views {
       padding-top: 50px;
-      padding-bottom: 0; } }
+      padding-bottom: 22px; } }
   @media (max-width: 767px) {
     .views {
-      padding-top: 46px;
       padding-bottom: 12px;
       min-height: 400px; } }
 
@@ -598,7 +590,7 @@ img {
   z-index: 0; }
   @media (max-width: 1023px) {
     .views__item {
-      min-height: 414px; } }
+      min-height: 404px; } }
   @media (max-width: 767px) {
     .views__item {
       min-height: 396px; } }
@@ -654,7 +646,7 @@ img {
           position: static; } }
   .views__item:last-child {
     top: -10px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .views__item:last-child {
         top: 0; } }
     .views__item:last-child::after {
@@ -700,7 +692,6 @@ img {
   padding-top: 20px; }
 
 .video {
-  position: relative;
   min-height: 706px;
   background-color: #131314;
   padding: 97px 0 0;
@@ -736,35 +727,40 @@ img {
   opacity: 0.7;
   text-align: center;
   max-width: 340px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 56px; }
   @media (max-width: 1023px) {
     .video p {
-      max-width: 420px; } }
+      max-width: 420px;
+      padding-bottom: 41px; } }
+  @media (max-width: 767px) {
+    .video p {
+      padding-bottom: 53px; } }
 
 .video__player {
+  position: relative; }
+
+.video__player img {
   position: absolute;
-  top: 282px;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
   max-width: 929px; }
   @media (max-width: 1023px) {
-    .video__player {
-      top: 217px;
+    .video__player img {
       max-width: 503px; } }
   @media (max-width: 767px) {
-    .video__player {
-      top: 271px;
+    .video__player img {
       max-width: 288px; } }
 
 .video__button {
   position: absolute;
   width: 69px;
   height: 69px;
-  top: 0;
+  top: 227px;
   left: 0;
   right: 0;
-  bottom: 0;
   margin: auto;
   background-image: url("../img/icons/play.svg");
   background-repeat: no-repeat;
@@ -774,11 +770,13 @@ img {
     .video__button {
       width: 93px;
       height: 93px;
+      top: 96px;
       background-size: 89px; } }
   @media (max-width: 767px) {
     .video__button {
       width: 67px;
       height: 67px;
+      top: 47px;
       background-size: 65px; } }
   .video__button:focus {
     border: solid 2px #ffffff; }
@@ -900,7 +898,6 @@ img {
       margin-left: -15px; } }
   @media (max-width: 767px) {
     .footer a[href="mailto:puteshestviemechta@gmail.ru"] {
-      margin-bottom: 20px;
       margin-left: 9px; } }
   .footer a[href="mailto:puteshestviemechta@gmail.ru"]::before {
     width: 26px;

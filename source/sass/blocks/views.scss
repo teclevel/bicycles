@@ -5,11 +5,10 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 22px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 46px;
     padding-bottom: 12px;
     min-height: 400px;
   }
@@ -65,7 +64,7 @@
   z-index: 0;
 
   @media (max-width: $tablet-width) {
-    min-height: 414px;
+    min-height: 404px;
   }
 
   @media (max-width: $mobile-width) {
@@ -140,7 +139,7 @@
   &:last-child {
     top: -10px;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $tablet-width) {
       top: 0;
     }
 

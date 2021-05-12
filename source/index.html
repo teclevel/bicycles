@@ -37,14 +37,11 @@
           <form class="lead__form form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset">
               <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-
               <input id="name" type="text" name="user-name" required placeholder="Введите Ваше Имя">
               <label class="visually-hidden" for="name">поле для ввода имени</label>
-
               <input id="tel" type="tel" name="user-tel" required placeholder="Введите Ваш номер телефона"
-              pattern="+[0-9]{12}" minlength="11" maxlength="12" aria-label="поле ввода телефона">
-              <label for="tel"></label>
-
+              pattern="+[0-9]{12}" minlength="11" maxlength="12">
+              <label class="visually-hidden" for="tel">поле ввода телефона"</label>
               <button type="submit">Подобрать велосипед мечты</button>
             </fieldset>
           </form>
