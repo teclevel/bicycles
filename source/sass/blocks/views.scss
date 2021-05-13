@@ -1,15 +1,13 @@
 .views {
   background-color: $background-views;
-  padding-top: 125px;
-  padding-bottom: 83px;
+  padding: 125px 0 83px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 22px;
+    padding: 50px 0 22px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 12px;
+    padding: 50px 0 12px;
     min-height: 400px;
   }
 }
@@ -34,13 +32,12 @@
   line-height: 30px;
   color: $title;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 25px 0 60px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 41px;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
   }
 }
 
@@ -190,5 +187,5 @@
   letter-spacing: -0.5px;
   color: $black;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0 0;
 }

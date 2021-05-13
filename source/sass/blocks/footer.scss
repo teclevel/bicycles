@@ -22,7 +22,7 @@
   position: relative;
   text-decoration: none;
   color: $black-05;
-  padding-left: 42px;
+  padding: 0 0 0 42px;
 
   &::before {
     position: absolute;
@@ -43,14 +43,14 @@
 
 .footer a[href="mailto:puteshestviemechta@gmail.ru"] {
   line-height: 22px;
-  margin-left: -20px;
+  margin: 0 0 0 -20px;
 
   @media (max-width: $tablet-width) {
-    margin-left: -15px;
+    margin: 0 0 0 -15px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-left: 9px;
+    margin: 0 0 0 9px;
   }
 
   &::before {
@@ -64,7 +64,7 @@
 
 .footer a[href="tel:+749978468446"] {
   line-height: 32px;
-  margin-left: -15px;
+  margin: 0 0 0 -15px;
 
   &::before {
     width: 22px;
