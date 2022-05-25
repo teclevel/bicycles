@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
@@ -106,5 +106,5 @@ gulp.task('clean', function () {
   return del('docs');
 });
 
-gulp.task('docs', gulp.series('clean', 'copy', 'css', 'normalize', 'sprite', 'html', 'images', 'webp'));
-gulp.task('start', gulp.series('docs', 'server'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'normalize', 'sprite', 'html', 'images', 'webp'));
+gulp.task('start', gulp.series('server'));
